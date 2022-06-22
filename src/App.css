@@ -1,14 +1,25 @@
 .HeaderBanner{
   background-color: black;
-  
+  justify-content: space-between;
+  display: flex;
 }
 
-.navButtons button{
-  display: inline-block;
-  align-items: right;
+.navButtons{
+  display: flex;
+  margin-right: 50px;
+  justify-content: center;
   border: none;
+}
+.navButtons button{
+  margin: 9px;
+  border: transparent;
+  background-color: black;
+  color: white;
 }
 
 #mainTitle{
   text-align: left;
+  margin-left: 80px;
+  margin-top: 6px;
+  font-size: larger;
 }
