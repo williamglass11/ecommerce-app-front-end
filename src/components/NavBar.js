@@ -1,11 +1,11 @@
 import React from 'react'
 
-import '../App.css'
+import '../styles/App.css'
 
 const NavBar = () => {
   return (
-    <div className='HeaderBanner'>
-        <div id='mainTitle' style={{color: 'white'}}>
+    <head className='HeaderBanner'>
+        <div id='mainTitle'>
             eCommerce
         </div>
         <div className='navButtons'>
@@ -30,7 +30,7 @@ const NavBar = () => {
                 </button>
             </div>
         </div>
-    </div>
+    </head>
   )
 }
 

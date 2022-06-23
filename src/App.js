@@ -1,5 +1,5 @@
 import ContentBuilder from './ContentBuilder'
-import './App.css';
+import './styles/App.css';
 
 
 function App() {
