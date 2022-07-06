@@ -1,0 +1,44 @@
+
+.HeaderBanner{
+  background-color: black;
+  justify-content: space-between;
+  display: flex;
+}
+
+.navButtons{
+  display: flex;
+  margin-right: 50px;
+  justify-content: center;
+  border: none;
+}
+.navButtons button{
+  margin: 9px;
+  border: transparent;
+  background-color: black;
+  color: white;
+}
+
+#mainTitle{
+  text-align: left;
+  margin-left: 80px;
+  margin-top: 6px;
+  font-size: x-large;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+p{
+  position: absolute;
+  color: white;
+}
+img{
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .5;
+}
+body{
+  background-color: rgb(0, 0, 0);
+}
