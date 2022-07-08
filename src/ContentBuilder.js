@@ -17,19 +17,43 @@ const ContentBuilder = () => {
     <NavBar />
       <div className='cardContainer' >
         <Grid container justify='center'>
-          <Grid item xs={3}>
+          <Grid item xs={2}>
           <RecipeReviewCard />
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={2}>
           <RecipeReviewCard />
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={2}>
           <RecipeReviewCard />
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={2}>
           <RecipeReviewCard />
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={2}>
+          <RecipeReviewCard />
+          </Grid>
+          <Grid item xs={2}>
+          <RecipeReviewCard />
+          </Grid>
+          <Grid item xs={2}>
+          <RecipeReviewCard />
+          </Grid>
+          <Grid item xs={2}>
+          <RecipeReviewCard />
+          </Grid>
+          <Grid item xs={2}>
+          <RecipeReviewCard />
+          </Grid>
+          <Grid item xs={2}>
+          <RecipeReviewCard />
+          </Grid>
+          <Grid item xs={2}>
+          <RecipeReviewCard />
+          </Grid>
+          <Grid item xs={2}>
+          <RecipeReviewCard />
+          </Grid>
+          <Grid item xs={2}>
           <RecipeReviewCard />
           </Grid>
         </Grid>
