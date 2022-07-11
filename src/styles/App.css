@@ -35,11 +35,10 @@
 }
 
 .cardContainer{
-  background-color: rgb(56, 56, 56);
+  background-color: rgba(34, 34, 34, 0.5);
   border: 1px solid rgb(230, 230, 230);
   margin: 15px;
   min-height: 50px;
-  opacity: .8;
 }
 p{
   position: absolute;
