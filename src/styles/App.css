@@ -40,25 +40,12 @@
   margin: 15px;
   min-height: 50px;
 }
-p{
-  position: absolute;
-  color: white;
-}
-img{
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: .5;
-}
 body{
   background-image: url(./bodyBackground.jpg);
   background-attachment: fixed;
   background-size: cover;
   margin-bottom: 0;
   padding-bottom: 0;
-  overflow-y: hidden;
   overflow-x: hidden;
 
 }

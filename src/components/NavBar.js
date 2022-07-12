@@ -4,7 +4,7 @@ import '../styles/App.css'
 
 const NavBar = () => {
   return (
-    <head className='HeaderBanner'>
+    <div className='HeaderBanner'>
         <div id='mainTitle'>
             eCommerce
         </div>
@@ -30,7 +30,7 @@ const NavBar = () => {
                 </button>
             </div>
         </div>
-    </head>
+    </div>
   )
 }
 

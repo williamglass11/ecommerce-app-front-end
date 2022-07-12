@@ -1,60 +1,62 @@
 
 import * as React from 'react';
-import { Card, CardHeader, CardMedia, CardContent, CardActions, IconButton, Typography } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import { makeStyles } from '@mui/styles';
+import { Card, CardHeader, CardActionArea, CardMedia, CardContent, CardActions, IconButton, Typography } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import { AddShoppingCart } from '@mui/icons-material';
 import ShareIcon from '@mui/icons-material/Share';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import logo192 from '../styles/logo192.png';
 
 import '../styles/App.css'
+import { ClassNames } from '@emotion/react';
 
+const useStyles = makeStyles({
+  root: {
+    width: 300,
+    height: 300
+  },
+  media: {
+    height: 140
+  }
+})
 
-export default function RecipeReviewCard() {
+export default function ProductCards(products) {
+  const classes = useStyles();
   return (
-    <Card className='card' sx={{ maxWidth: 345 }}>
-      {/* <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
-      /> */}
+    <>
+    {products.products.map((product, index) => (
+    <Grid item key={index}>
+      <Card className={classes.root}>
       <CardMedia
+        className={classes.media}
         component="img"
-        height="50"
-        width='50'
-        alt="Paella dish"
+        height="140"
+        image={product.image}
+        alt={product.name}
       />
       <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {product.name}
+        </Typography>
         <Typography variant="body2" color="text.secondary">
-          I wish this worked
+          {product.description}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <AddShoppingCart />
-        </IconButton>
-        <IconButton>
-          <ShareIcon />
-        </IconButton>
-      </CardActions>
-    </Card>
-    // <Card >
-    //   <CardMedia  image='' />
-    // </Card>
-
+        <CardActions disableSpacing>
+          <IconButton aria-label="add to favorites">
+            <FavoriteIcon />
+          </IconButton>
+          <IconButton aria-label="add to cart">
+            <AddShoppingCart />
+          </IconButton>
+        </CardActions>
+      </Card>
+    </Grid>
+    ))}
+    </>
   );
+  
 }
 
