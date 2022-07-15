@@ -20,12 +20,12 @@ const NavBar = () => {
             </div>
             <div>
                 <button className='navButtons'>
-                    About
+                    Products
                 </button>
             </div>
             <div>
                 <button className='navButtons'>
-                    Products
+                    About
                 </button>
             </div>
             {logInTest ? 

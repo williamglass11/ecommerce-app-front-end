@@ -10,6 +10,6 @@ afterEach(cleanup);
 test('renders button correctly', () => {
     const { getByTestId } = render(<NavBar/>);
 
-    expect(getByTestId('eCommewrceButton'));
+    expect(getByTestId('eCommerceButton'));
 
 })
