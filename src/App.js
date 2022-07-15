@@ -1,4 +1,4 @@
-import ContentBuilder from './ContentBuilder'
+import ContentBuilder from './components/ContentBuilder'
 import './styles/App.css';
 
 

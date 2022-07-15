@@ -2,33 +2,44 @@ import React from 'react'
 
 import '../styles/App.css'
 
+const logInTest = false;
+
 const NavBar = () => {
   return (
     <div className='HeaderBanner'>
-        <div id='mainTitle'>
-            eCommerce
+        <div className='mainTitle'>
+            <button data-testid='eCommerceButton'>
+                eCommerce
+            </button>
         </div>
-        <div className='navButtons'>
+        <div className='navButtonsHolder'>
             <div>
-                <button>
+                <button className='navButtons'>
                     Home
                 </button>
             </div>
             <div>
-                <button>
+                <button className='navButtons'>
                     About
                 </button>
             </div>
             <div>
-                <button>
+                <button className='navButtons'>
                     Products
                 </button>
             </div>
-            <div>
-                <button>
-                    Account
-                </button>
-            </div>
+            {logInTest ? 
+                <div>
+                    <button className='navButtons'>
+                        Account
+                    </button>
+                </div> : 
+                <div>
+                    <button className='signUp'>
+                        Signup
+                    </button>
+                </div>
+            }
         </div>
     </div>
   )
