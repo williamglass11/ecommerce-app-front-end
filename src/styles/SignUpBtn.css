@@ -1,0 +1,44 @@
+:root {
+    --primary: #1888ff;
+  }
+  
+  .btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--primary);
+  }
+  
+  .btn:hover {
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease-out;
+  }
+  .nav-linkss {
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-linkss:hover {
+    background-color: #1888ff;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+  @media screen and (max-width: 960px){
+    .btn{
+        display: none;
+    }
+    .nav-linkss{
+        display:none;
+    }
+  }
