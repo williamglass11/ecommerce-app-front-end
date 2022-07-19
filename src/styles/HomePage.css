@@ -1,0 +1,21 @@
+.topSpaceWithLogo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: #1668c0;
+    opacity: .95;
+}
+.largeMessage{
+    font-size: xx-large;
+    flex-wrap: wrap;
+    width: 100px;
+    font-weight: 800;
+    text-decoration-color: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+}
+.reactLogo{
+    margin-left: 100px;
+    height: 200px;
+    width: 200px;
+}

@@ -6,10 +6,11 @@
     list-style: none;
     text-align: start;
     padding: 0px;
+    z-index: 1;
   }
   
   .dropdown-menu li {
-    background: #1888ff;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
     cursor: pointer;
   }
   
