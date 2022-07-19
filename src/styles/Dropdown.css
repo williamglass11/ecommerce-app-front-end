@@ -1,13 +1,11 @@
 .dropdown-menu {
     background: transparent;
     width: 200px;
-    position: absolute;
-    top: 80px;
+    position:absolute;
+    top: 60px;
     list-style: none;
     text-align: start;
-  }
-  btnGoAway{
-    display: none;
+    padding: 0px;
   }
   
   .dropdown-menu li {

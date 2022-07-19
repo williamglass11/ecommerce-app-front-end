@@ -27,7 +27,7 @@ const ContentBuilder = () => {
     <div className='mainPageContainer' data-testid='mainPageContainer'>
     <NavBar />
       <div className='cardContainer'>
-        <Grid container justify='center' spacing={2} style={{ margin: 2}}>
+        <Grid container justify='center' spacing={2.5} style={{ margin: 2 }}>
             <ProductCards
               products={products}
             />

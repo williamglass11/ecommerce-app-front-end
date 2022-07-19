@@ -32,7 +32,7 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-        <div to='/' className='navbar-logo' onClick={closeMobileMenu}>
+        <div className='navbar-logo' onClick={closeMobileMenu}>
           eCommerce
         </div>
         <div className='menu-icon' onClick={handleClick}>
@@ -57,8 +57,8 @@ function Navbar() {
               onClick={closeMobileMenu}
             >
               Services <i className='fas fa-caret-down' />
-            </div>
             {dropdown && <Dropdown />}
+            </div>
           </li>
           <li className='nav-item'>
             <div

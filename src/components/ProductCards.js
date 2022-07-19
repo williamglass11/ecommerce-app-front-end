@@ -14,7 +14,7 @@ import { ClassNames } from '@emotion/react';
 
 const useStyles = makeStyles({
   root: {
-    width: 300,
+    width: 290,
     height: 300
   },
   media: {
