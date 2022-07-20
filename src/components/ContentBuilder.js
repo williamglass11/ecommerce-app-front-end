@@ -1,8 +1,9 @@
 import React from 'react'
-import NavBar from './NavBar/NavBar'
-import ProductCards from './ProductCards'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from './NavBar/NavBar';
+import ProductCards from './pages/ProductCards';
 import Grid from '@mui/material/Grid';
-import HomePage from './Home/HomePage';
+import HomePage from './pages/HomePage';
 
 import book from '../styles/BatteredBookImage.webp'
 import shoes from '../styles/03-crocs-by-carrots-gq-september-2020.webp'
@@ -22,22 +23,27 @@ const products = [
   {id: 6, name: 'bread', description: 'tasty', image: logo1},
   {id: 7, name: 'toilet', description: 'you know what it is', image: logo}
 ]
-const pageRequest = 'home';
 
-const ContentBuilder = () => {
+const ContentBuilder = ({ pageRequest }) => {
 
+  console.log(pageRequest)
   return (
-    
-    <div className='mainPageContainer' data-testid='mainPageContainer'>
-    <NavBar />
-      {pageRequest === 'products' ? <div className='cardContainer'>
-        <Grid container justify='center' spacing={2.5} style={{ margin: 2 }}>
-            <ProductCards
-              products={products}
-            />
-        </Grid> 
-      </div> : <HomePage />}
-    </div>
+    <Router>
+      <div className='mainPageContainer' data-testid='mainPageContainer'>
+      <NavBar />
+      <Routes>
+        <Route path='/' exact element={<HomePage />} />
+        <Route path='/products' element={
+          <div className='cardContainer'>
+            <Grid container justify='center' spacing={2.5} style={{ margin: 2 }}>
+              <ProductCards
+                products={products}
+              />
+            </Grid>
+          </div>}/>
+      </Routes>
+      </div>
+    </Router>
   )
 }
 

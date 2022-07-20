@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Dropdown from './Dropdown';
+import { Link } from 'react-router-dom';
 
 import '../../styles/Navbar.css';
 import '../../styles/SignUpBtn.css';
+import ContentBuilder from '../ContentBuilder';
 
 const isSignUp = true;
 
@@ -11,7 +13,15 @@ function Navbar() {
   const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+
+  const closeMobileMenu = (pageRequest) => {
+    setClick(false);
+    return(
+    <ContentBuilder
+      pageRequest={pageRequest}
+    />
+    )
+  }
 
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
@@ -32,71 +42,82 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-        <div className='navbar-logo' onClick={closeMobileMenu}>
+        <Link to='/' className='navbar-logo' onClick={() => {closeMobileMenu('Home')}}>
           eCommerce
-        </div>
+        </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
-            <div 
+            <Link
+            to='/' 
             className='nav-links' 
-            onClick={closeMobileMenu}
+            onClick={() => {closeMobileMenu('Home')}}
             >
               Home
-            </div>
+            </Link>
           </li>
           <li
             className='nav-item'
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <div
+            <Link
+              to='/services'
               className='nav-links'
-              onClick={closeMobileMenu}
+              onClick={() => {closeMobileMenu('Services')}}
             >
               Services <i className='fas fa-caret-down' />
             {dropdown && <Dropdown />}
-            </div>
+            </Link>
           </li>
           <li className='nav-item'>
-            <div
+            <Link
+              to='/products'
               className='nav-links'
-              onClick={closeMobileMenu}
+              onClick={() => {closeMobileMenu('Products')}}
             >
               Products
-            </div>
+            </Link>
           </li>
           <li className='nav-item'>
-            <div
+            <Link
+            to='/contact'
               className='nav-links'
-              onClick={closeMobileMenu}
+              onClick={() => closeMobileMenu('Contact')}
             >
               Contact Us
-            </div>
+            </Link>
           </li>
           <li>
-            <div
+            <Link
+              to='/signup'
               className='nav-links-mobile'
-              onClick={closeMobileMenu}
+              onClick={() => closeMobileMenu('SignUp')}
             >
               Sign Up
-            </div>
+            </Link>
           </li>
         </ul>
         {isSignUp ? 
           <li className='nav-item'>
-            <div className={'btn'}>
+            <Link 
+              to='/signup' 
+              className={'btn'} 
+              onClick={() => closeMobileMenu('SignUp')}
+            >
               Sign Up
-            </div>
+            </Link>
           </li> : 
           <li className='nav-item'>
-            <div
-            className={'nav-linkss'}
+            <Link
+            to='/account'
+            className={'nav-linkss'} 
+            onClick={() => closeMobileMenu('Account')}
             >
               Account
-            </div>
+            </Link>
           </li>}
       </nav>
     </>

@@ -2,15 +2,11 @@
 import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import { makeStyles } from '@mui/styles';
-import { Card, CardHeader, CardActionArea, CardMedia, CardContent, CardActions, IconButton, Typography } from '@mui/material';
-import Avatar from '@mui/material/Avatar';
+import { Card, CardMedia, CardContent, CardActions, IconButton, Typography } from '@mui/material';
 import { AddShoppingCart } from '@mui/icons-material';
-import ShareIcon from '@mui/icons-material/Share';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-import '../styles/App.css'
-import { ClassNames } from '@emotion/react';
+import '../../styles/App.css'
 
 const useStyles = makeStyles({
   root: {
