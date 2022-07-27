@@ -3,15 +3,16 @@
   padding: 2px;
   margin: 12px;
 }
-
+.gridContainer {
+  padding: 5px;
+}
 .cardContainer {
   justify-content: center;
   align-items: center;
-  background-color: rgba(34, 34, 34, 0.7);
+  background-color: rgb(22, 104, 192, 0.6);
   border: 1px solid rgb(230, 230, 230);
   margin: 15px;
   min-height: 50px;
-  max-height: 100%;
   padding-bottom: 15px;
 }
 body {
@@ -21,10 +22,4 @@ body {
   margin-bottom: 0;
   padding-bottom: 0;
   overflow-x: hidden;
-}
-footer{
-  border-radius: 4px;
-  background-color: #242222;
-  width: 110%;
-  min-height: 80px;
 }

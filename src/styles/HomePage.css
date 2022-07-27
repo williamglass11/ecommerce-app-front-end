@@ -1,82 +1,87 @@
-.topSpaceWithLogo{
+.topSpaceWithLogo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 500px;
+  width: 100%;
+  background-color: rgb(22, 104, 192);
+  opacity: 0.85;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.largeMessage {
+  font-size: xx-large;
+  flex-wrap: wrap;
+  width: 100px;
+  font-weight: 900;
+  font-family: Garamond, serif;
+  color: black;
+}
+.reactLogo {
+  margin-left: 100px;
+  height: 200px;
+  width: 200px;
+}
+.bottomHalfHome {
+  background-color: aliceblue;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.titleText {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+.infoContainer {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  text-align: center;
+  font-weight: 600;
+}
+.infoContainer p {
+  font-size: small;
+  font-weight: 400;
+  inline-size: 250px;
+  overflow-wrap: break-word;
+  color: black;
+}
+.infoContainer h1 {
+  color: #1668c0;
+}
+.info {
+  margin: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .topSpaceWithLogo {
     justify-content: center;
     align-items: center;
     display: flex;
     height: 500px;
     width: 100%;
     background-color: #1668c0;
-    opacity: .85;
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-
-.largeMessage{
+    opacity: 0.95;
+  }
+  .largeMessage {
     font-size: xx-large;
     flex-wrap: wrap;
     width: 100px;
-    font-weight: 900;
-    font-family: Garamond, serif;
-    color: black;
-}
-.reactLogo{
-    margin-left: 100px;
-    height: 200px;
-    width: 200px;
-}
-.bottomHalfHome{
-    background-color: aliceblue;
-    width: 100%;
-}
-.titleText{
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-    font-weight: 900;
-    margin-bottom: 50px;
-}
-.infoContainer{
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    font-size: small;
-    text-align: center;
-    font-weight: 600;
-}
-.infoContainer p{
-    font-size: small;
-    font-weight: 400;
-    inline-size: 250px;
-    overflow-wrap: break-word;
-    color: black;
-}
-.infoContainer h1{
-    color: #1668c0;
-}
-.info{
-    margin: 50px;
-}
-
-@media screen and (max-width: 1000px) {
-    .topSpaceWithLogo{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        height: 500px;
-        width: 100%;
-        background-color: #1668c0;
-        opacity: .95;
-    }
-    .largeMessage{
-        font-size: xx-large;
-        flex-wrap: wrap;
-        width: 100px;
-        font-weight: 800;
-        text-decoration-color: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-    }
-    .reactLogo{
-        height: 100px;
-        width: 100px;
-    }
+    font-weight: 800;
+    text-decoration-color: linear-gradient(
+      90deg,
+      rgb(28, 27, 27) 0%,
+      rgb(26, 23, 23) 100%
+    );
+  }
+  .reactLogo {
+    height: 100px;
+    width: 100px;
+  }
 }
