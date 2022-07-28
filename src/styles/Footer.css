@@ -54,6 +54,7 @@ span {
   flex-direction: column;
 }
 #subscribe {
+  font-size: 15px;
   color: white;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -61,7 +62,6 @@ span {
   background-color: #1888ff;
   border: transparent;
   border-radius: 4px;
-  font-size: medium;
 }
 #subscribe:hover {
   border: 1px solid #1888ff;
@@ -92,4 +92,45 @@ span {
   color: #469fff3c;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    width: 105%;
+    text-align: center;
+  }
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerFoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutUsIconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #newsLetter {
+    margin-bottom: 20px;
+  }
+  #footerNote {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  #subscribe {
+    display: flex;
+    justify-content: center;
+  }
+  .locationLine {
+    justify-content: center;
+  }
+  .link {
+    text-align: center;
+  }
 }
