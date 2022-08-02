@@ -58,6 +58,25 @@
 .info {
   margin: 50px;
 }
+.waterImage{
+  padding-top: 10%;
+  padding-left: 2%;
+  max-width: 50%;
+}
+#bottomHalfMedia{
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#mediaText{
+  padding-top: 15%;
+  padding-right: 10%;
+  inline-size: 350px;
+  overflow-wrap: break-word;
+  text-align: center;
+  opacity: .7;
+}
 
 @media screen and (max-width: 1000px) {
   #home {
@@ -84,6 +103,9 @@
       rgb(26, 23, 23) 100%
     );
   }
+  .bottomHalfHome{
+    padding-bottom: 0;
+  }
   .reactLogo {
     height: 100px;
     width: 100px;
@@ -92,5 +114,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .waterImage{
+    display: none;
+  }
+  #bottomHalfMedia{
+    background-image: linear-gradient(aliceblue, #1668c0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #mediaText{
+    padding-top: 0%;
+    padding-right: 0%;
+    inline-size: 350px;
+    overflow-wrap: break-word;
+    text-align: center;
+    opacity: .8;
   }
 }

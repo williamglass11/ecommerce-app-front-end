@@ -54,7 +54,6 @@ const products = [
 ];
 
 const ContentBuilder = ({ pageRequest }) => {
-  console.log(pageRequest);
   return (
     <Router>
       <div className="mainPageContainer" data-testid="mainPageContainer">
