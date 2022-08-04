@@ -9,7 +9,15 @@
   padding-top: 150px;
   padding-bottom: 150px;
 }
-
+hr.roundedDivider {
+  border-top: 2px solid #bbb;
+  border-radius: 8px;
+  margin-top: 5%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.carousel div {
+}
 .largeMessage {
   font-size: xx-large;
   flex-wrap: wrap;
@@ -58,29 +66,30 @@
 .info {
   margin: 50px;
 }
-.waterImage{
+.waterImage {
   padding-top: 10%;
   padding-left: 2%;
   max-width: 50%;
 }
-#bottomHalfMedia{
-  padding-top: 10%;
+#bottomHalfMedia {
+  padding-top: 3%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-#mediaText{
-  padding-top: 15%;
+#mediaText {
+  padding-top: 20%;
   padding-right: 10%;
-  inline-size: 350px;
+  inline-size: 450px;
   overflow-wrap: break-word;
   text-align: center;
-  opacity: .7;
+  opacity: 0.7;
+  font-size: 200%;
 }
 
 @media screen and (max-width: 1000px) {
   #home {
-    width: 105%;
+    width: 100%;
     text-align: center;
   }
   .topSpaceWithLogo {
@@ -103,7 +112,7 @@
       rgb(26, 23, 23) 100%
     );
   }
-  .bottomHalfHome{
+  .bottomHalfHome {
     padding-bottom: 0;
   }
   .reactLogo {
@@ -115,21 +124,21 @@
     flex-direction: column;
     align-items: center;
   }
-  .waterImage{
+  .waterImage {
     display: none;
   }
-  #bottomHalfMedia{
+  #bottomHalfMedia {
     background-image: linear-gradient(aliceblue, #1668c0);
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #mediaText{
+  #mediaText {
     padding-top: 0%;
     padding-right: 0%;
     inline-size: 350px;
     overflow-wrap: break-word;
     text-align: center;
-    opacity: .8;
+    opacity: 0.8;
   }
 }

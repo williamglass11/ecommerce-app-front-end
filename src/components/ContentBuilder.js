@@ -16,7 +16,7 @@ import logo1 from "../styles/react-icon-dark.jpg";
 
 import "../styles/App.css";
 
-const products = [
+export const products = [
   {
     id: 1,
     name: "book",
@@ -46,14 +46,14 @@ const products = [
   { id: 6, name: "bread", description: "tasty", image: logo1 },
   { id: 7, name: "toilet", description: "you know what it is", image: logo },
   { id: 6, name: "bread", description: "tasty", image: logo1 },
-  { id: 7, name: "toilet", description: "you know what it is", image: logo },
-  { id: 6, name: "bread", description: "tasty", image: logo1 },
-  { id: 7, name: "toilet", description: "you know what it is", image: logo },
-  { id: 6, name: "bread", description: "tasty", image: logo1 },
-  { id: 7, name: "toilet", description: "you know what it is", image: logo },
+  { id: 8, name: "toilet", description: "you know what it is", image: logo },
+  { id: 9, name: "bread", description: "tasty", image: logo1 },
+  { id: 10, name: "toilet", description: "you know what it is", image: logo },
+  { id: 11, name: "bread", description: "tasty", image: logo1 },
+  { id: 12, name: "toilet", description: "you know what it is", image: logo },
 ];
 
-const ContentBuilder = ({ pageRequest }) => {
+const ContentBuilder = () => {
   return (
     <Router>
       <div className="mainPageContainer" data-testid="mainPageContainer">

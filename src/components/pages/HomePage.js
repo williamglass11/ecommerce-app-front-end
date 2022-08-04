@@ -1,9 +1,9 @@
 import React from "react";
+import Carousel from "../ProductCarousel/Carousel";
 
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import AccessibilityIcon from "@mui/icons-material/Accessibility";
 import CurrencyBitcoinIcon from "@mui/icons-material/CurrencyBitcoin";
-
 
 import "../../styles/HomePage.css";
 
@@ -13,7 +13,8 @@ const equalOp =
   "As an equal opportunity employer, even a criminal background or disability wont prevent employment. We attribute most of our success to our diverse working team.";
 const payment =
   "We accept all major payment apps like Venmo, Paypal, Zelle, and cashapp. In addition we also accept wallet to wallet crypto transfers.";
-const mediaText = 'Tired of big Jeff harvesting your data?? Here we are just concerned with delivering customers high quality products on time. We are dedicated to meeting this mission because this company was founded on the idea that Jeff is way too rich and Amazon needs a serious competitor in this market';
+const mediaText =
+  "Tired of big Jeff harvesting your data?? Here we are just concerned with delivering customers high quality products on time. We are dedicated to meeting this mission because this company was founded on the idea that Jeff is way too rich and Amazon needs a serious competitor in this market Tired of big Jeff harvesting your data?? Here we are just concerned with delivering customers high quality products on time. We are dedicated to meeting this mission because this company was founded on the idea that Jeff is way too rich and Amazon needs a serious competitor in this market";
 
 const HomePage = () => {
   return (
@@ -45,17 +46,15 @@ const HomePage = () => {
             <CurrencyBitcoinIcon fontSize="large" />
           </h1>
         </div>
-        <div id='bottomHalfMedia'>
+        <hr className="roundedDivider"></hr>
+        <Carousel />
+        <div id="bottomHalfMedia">
           <img
             className="waterImage"
-            alt='stones in shallow water'
+            alt="stones in shallow water"
             src={require("../../styles/oceanwater.jpg")}
           />
-          <h1 id='mediaText'>
-            {mediaText}
-            
-          </h1>
-          
+          <h1 id="mediaText">{mediaText}</h1>
         </div>
       </div>
     </div>
