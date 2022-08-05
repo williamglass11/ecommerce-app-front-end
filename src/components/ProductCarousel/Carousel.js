@@ -9,6 +9,8 @@ import headset from "../../styles/headset.webp";
 import logo from "../../styles/logo192.png";
 import logo1 from "../../styles/react-icon-dark.jpg";
 
+import "../../styles/Carousel.css";
+
 const images = [
   {
     id: 1,
@@ -39,17 +41,19 @@ const images = [
   { id: 6, name: "bread", description: "tasty", image: logo1 },
   { id: 7, name: "toilet", description: "you know what it is", image: logo },
   { id: 8, name: "bread", description: "tasty", image: logo1 },
+  { id: 9, name: "toilet", description: "you know what it is", image: logo },
+  { id: 10, name: "bread", description: "tasty", image: logo1 },
 ];
 
 const Carousel = () => {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 5000,
+    speed: 3000,
     slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     responsive: [
       {
@@ -57,7 +61,7 @@ const Carousel = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          speed: 500,
+          speed: 1500,
           infinite: true,
           dots: true,
           autoplaySpeed: 2000,
@@ -69,7 +73,7 @@ const Carousel = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          speed: 500,
+          speed: 1500,
           initialSlide: 2,
           autoplaySpeed: 2000,
           cssEase: "linear",
@@ -79,7 +83,7 @@ const Carousel = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          speed: 500,
+          speed: 1500,
           slidesToScroll: 1,
           autoplaySpeed: 2000,
           cssEase: "linear",
@@ -89,25 +93,16 @@ const Carousel = () => {
   };
 
   return (
-    <div>
-      <h2 style={{ textAlign: "center" }}>Shop now</h2>
+    <div className="carouselContainer">
+      <h2 className="carouselHeader">Shop now</h2>
       <Slider {...settings}>
         {images.map((product, index) => {
           return (
-            <div
-              key={index}
-              style={{
-                width: 60,
-              }}
-            >
+            <div className="carouselItem" key={index}>
               <img
                 src={product.image}
-                alt="imageeeeeeee"
-                style={{
-                  height: 210,
-                  width: 200,
-                  paddingLeft: "25%",
-                }}
+                alt={product.name}
+                className="carouselMedia"
               />
               <h3 style={{ textAlign: "center" }}>{product.name}</h3>
             </div>
