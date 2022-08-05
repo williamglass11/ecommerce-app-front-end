@@ -1,0 +1,42 @@
+.carouselContainer {
+  max-width: 80%;
+  margin: auto;
+}
+.carouselContainer button {
+  padding-top: 1px;
+  background-color: #1888ff;
+  border: transparent;
+  border-radius: 8px;
+}
+.carouselItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carouselMedia {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 210px;
+  width: 200px;
+}
+.carouselItem :hover {
+  cursor: pointer;
+}
+.carouselHeader {
+  text-align: center;
+  color: aliceblue;
+  background-color: #1888ff;
+  border: transparent;
+  border-radius: 4px;
+  width: 150px;
+  margin: auto;
+  margin-bottom: 3%;
+}
+.carouselHeader:hover {
+  transition: all 0.3s ease-out;
+  background-color: transparent;
+  cursor: pointer;
+  color: #1888ff;
+  border: 1px solid #1888ff;
+}
