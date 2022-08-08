@@ -16,8 +16,6 @@ hr.roundedDivider {
   margin-left: 50px;
   margin-right: 50px;
 }
-.carousel div {
-}
 .largeMessage {
   font-size: xx-large;
   flex-wrap: wrap;
@@ -69,7 +67,7 @@ hr.roundedDivider {
 .waterImage {
   padding-top: 10%;
   padding-left: 2%;
-  max-width: 50%;
+  max-width: 40%;
 }
 #bottomHalfMedia {
   padding-top: 3%;
@@ -77,7 +75,7 @@ hr.roundedDivider {
   flex-direction: row;
   justify-content: space-between;
 }
-#mediaText {
+.mediaText {
   padding-top: 20%;
   padding-right: 10%;
   inline-size: 450px;
@@ -133,12 +131,18 @@ hr.roundedDivider {
     flex-direction: column;
     align-items: center;
   }
-  #mediaText {
-    padding-top: 0%;
+  .mediaText {
+    padding-top: 15%;
     padding-right: 0%;
     inline-size: 350px;
     overflow-wrap: break-word;
     text-align: center;
     opacity: 0.8;
+  }
+}
+@media screen and (min-width: 2200px) {
+  .mediaText {
+    inline-size: 450px;
+    font-size: 250% !important;
   }
 }

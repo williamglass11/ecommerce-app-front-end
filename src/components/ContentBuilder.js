@@ -2,17 +2,17 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar/NavBar";
 import ProductCards from "./pages/ProductCards";
-import Grid from "@mui/material/Grid";
 import Footer from "./Footer";
 import HomePage from "./pages/HomePage";
+import Contact from "./pages/Contact";
 
-import book from "../styles/BatteredBookImage.webp";
-import shoes from "../styles/03-crocs-by-carrots-gq-september-2020.webp";
-import hat from "../styles/hat.jpg";
-import controller from "../styles/61sQsA4NpXL._AC_SX679_.jpg";
-import headset from "../styles/headset.webp";
-import logo from "../styles/logo192.png";
-import logo1 from "../styles/react-icon-dark.jpg";
+import book from "../styles/Images/BatteredBookImage.webp";
+import shoes from "../styles/Images/03-crocs-by-carrots-gq-september-2020.webp";
+import hat from "../styles/Images/hat.jpg";
+import controller from "../styles/Images/61sQsA4NpXL._AC_SX679_.jpg";
+import headset from "../styles/Images/headset.webp";
+import logo from "../styles/Images/logo192.png";
+import logo1 from "../styles/Images/react-icon-dark.jpg";
 
 import "../styles/App.css";
 
@@ -64,12 +64,11 @@ const ContentBuilder = () => {
             path="/products"
             element={
               <div className="cardContainer">
-                <Grid container className="gridContainer">
-                  <ProductCards products={products} />
-                </Grid>
+                <ProductCards products={products} />
               </div>
             }
           />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>

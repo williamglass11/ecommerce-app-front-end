@@ -1,13 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
 
-import book from "../../styles/BatteredBookImage.webp";
-import shoes from "../../styles/03-crocs-by-carrots-gq-september-2020.webp";
-import hat from "../../styles/hat.jpg";
-import controller from "../../styles/61sQsA4NpXL._AC_SX679_.jpg";
-import headset from "../../styles/headset.webp";
-import logo from "../../styles/logo192.png";
-import logo1 from "../../styles/react-icon-dark.jpg";
+import book from "../../styles/Images/BatteredBookImage.webp";
+import shoes from "../../styles/Images/03-crocs-by-carrots-gq-september-2020.webp";
+import hat from "../../styles/Images/hat.jpg";
+import controller from "../../styles/Images/61sQsA4NpXL._AC_SX679_.jpg";
+import headset from "../../styles/Images/headset.webp";
+import logo from "../../styles/Images/logo192.png";
+import logo1 from "../../styles/Images/react-icon-dark.jpg";
 
 import "../../styles/Carousel.css";
 

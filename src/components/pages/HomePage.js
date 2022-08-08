@@ -24,7 +24,7 @@ const HomePage = () => {
         <img
           className="reactLogo"
           alt="React Logo"
-          src={require("../../styles/react-icon-dark.jpg")}
+          src={require("../../styles/Images/react-icon-dark.jpg")}
         />
       </div>
       <div className="bottomHalfHome">
@@ -52,9 +52,9 @@ const HomePage = () => {
           <img
             className="waterImage"
             alt="stones in shallow water"
-            src={require("../../styles/oceanwater.jpg")}
+            src={require("../../styles/Images/oceanwater.jpg")}
           />
-          <h1 id="mediaText">{mediaText}</h1>
+          <h1 className="mediaText">{mediaText}</h1>
         </div>
       </div>
     </div>

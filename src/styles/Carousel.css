@@ -6,7 +6,7 @@
   padding-top: 1px;
   background-color: #1888ff;
   border: transparent;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 .carouselItem {
   display: flex;
@@ -18,7 +18,7 @@
   margin-left: auto;
   margin-right: auto;
   height: 210px;
-  width: 200px;
+  width: 220px;
 }
 .carouselItem :hover {
   cursor: pointer;
@@ -35,8 +35,7 @@
 }
 .carouselHeader:hover {
   transition: all 0.3s ease-out;
-  background-color: transparent;
+  background-color: #242222;
   cursor: pointer;
-  color: #1888ff;
   border: 1px solid #1888ff;
 }
