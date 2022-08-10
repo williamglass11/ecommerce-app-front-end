@@ -8,20 +8,40 @@
   border: transparent;
   border-radius: 10px;
 }
-.carouselItem {
+.carouselContainer .carouselItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .carouselMedia {
+  border: solid #242424 1px;
+  border-radius: 8px;
+  border-bottom: transparent;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 210px;
-  width: 220px;
+  width: 218px;
+  height: 200px;
+}
+.carouselItem {
+  max-width: 220px;
 }
 .carouselItem :hover {
   cursor: pointer;
+}
+#carouselText {
+  margin-top: 0;
+  color: aliceblue;
+  padding-top: 2px;
+  text-align: center;
+  border: solid #242424 1px;
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top: transparent;
+  background-color: #242424;
 }
 .carouselHeader {
   text-align: center;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 
 import book from "../../styles/Images/BatteredBookImage.webp";
@@ -49,11 +49,11 @@ const Carousel = () => {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 3000,
+    speed: 6500,
     slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 500,
     cssEase: "linear",
     responsive: [
       {
@@ -61,10 +61,7 @@ const Carousel = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          speed: 1500,
-          infinite: true,
           dots: true,
-          autoplaySpeed: 2000,
           cssEase: "linear",
         },
       },
@@ -73,25 +70,22 @@ const Carousel = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          speed: 1500,
           initialSlide: 2,
-          autoplaySpeed: 2000,
           cssEase: "linear",
         },
       },
       {
         breakpoint: 480,
         settings: {
+          speed: 4500,
+          dots: false,
           slidesToShow: 1,
-          speed: 1500,
           slidesToScroll: 1,
-          autoplaySpeed: 2000,
           cssEase: "linear",
         },
       },
     ],
   };
-
   return (
     <div className="carouselContainer">
       <h2 className="carouselHeader">Shop now</h2>
@@ -104,7 +98,7 @@ const Carousel = () => {
                 alt={product.name}
                 className="carouselMedia"
               />
-              <h3 style={{ textAlign: "center" }}>{product.name}</h3>
+              <h3 id="carouselText">{product.name}</h3>
             </div>
           );
         })}

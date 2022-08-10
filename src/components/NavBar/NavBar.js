@@ -13,7 +13,7 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
 
-  const closeMobileMenu = (pageRequest) => {
+  const closeMobileMenu = () => {
     setClick(false);
   };
 
