@@ -35,7 +35,8 @@
 }
 .carouselHeader:hover {
   transition: all 0.3s ease-out;
-  background-color: #242222;
+  background-color: aliceblue;
+  color: #1888ff;
   cursor: pointer;
   border: 1px solid #1888ff;
 }
