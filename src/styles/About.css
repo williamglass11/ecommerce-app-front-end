@@ -1,0 +1,8 @@
+.about {
+  padding: 250px;
+  font-size: 100px;
+  color: aliceblue;
+  background: linear-gradient(rgb(28, 27, 27) 10%, #1888ff, #242424);
+  display: flex;
+  justify-content: center;
+}

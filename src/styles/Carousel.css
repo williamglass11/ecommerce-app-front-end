@@ -3,10 +3,8 @@
   margin: auto;
 }
 .carouselContainer button {
-  padding-top: 1px;
-  background-color: #1888ff;
-  border: transparent;
-  border-radius: 10px;
+  color: aliceblue;
+  background-color: aliceblue;
 }
 .carouselContainer .carouselItem {
   display: flex;

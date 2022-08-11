@@ -43,17 +43,21 @@ const images = [
   { id: 8, name: "bread", description: "tasty", image: logo1 },
   { id: 9, name: "toilet", description: "you know what it is", image: logo },
   { id: 10, name: "bread", description: "tasty", image: logo1 },
+  { id: 11, name: "toilet", description: "you know what it is", image: logo },
+  { id: 12, name: "bread", description: "tasty", image: logo1 },
 ];
 
 const Carousel = () => {
   var settings = {
     dots: true,
+
     infinite: true,
     speed: 6500,
     slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: true,
     autoplaySpeed: 500,
+    pauseOnHover: true,
     cssEase: "linear",
     responsive: [
       {
