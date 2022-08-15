@@ -2,17 +2,13 @@
   max-width: 80%;
   margin: auto;
 }
-.carouselContainer button {
-  color: aliceblue;
-  background-color: aliceblue;
-}
+
 .carouselContainer .carouselItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .carouselMedia {
-  border: solid #242424 1px;
   border-radius: 8px;
   border-bottom: transparent;
   border-bottom-left-radius: 0px;
@@ -24,22 +20,22 @@
   height: 200px;
 }
 .carouselItem {
-  max-width: 220px;
+  display: flex;
+  justify-content: center;
 }
 .carouselItem :hover {
   cursor: pointer;
 }
 #carouselText {
   margin-top: 0;
-  color: aliceblue;
+  color: #242424;
   padding-top: 2px;
   text-align: center;
-  border: solid #242424 1px;
   border-radius: 4px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top: transparent;
-  background-color: #242424;
+  background-color: transparent;
 }
 .carouselHeader {
   text-align: center;
@@ -57,4 +53,15 @@
   color: #1888ff;
   cursor: pointer;
   border: 1px solid #1888ff;
+}
+.carouselContainer button {
+  background-color: #1888ff;
+  border-radius: 10px;
+}
+.carouselContainer button:focus {
+  background-color: #1888ff;
+  border-radius: 10px;
+}
+.carouselContainer button:hover {
+  background-color: #1888ff;
 }
