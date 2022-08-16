@@ -48,7 +48,7 @@ const HomePage = () => {
         </div>
         <hr className="roundedDivider"></hr>
         <Carousel />
-        <div id="bottomHalfMedia">
+        <div className="bottomHalfMedia">
           <img
             className="waterImage"
             alt="stones in shallow water"

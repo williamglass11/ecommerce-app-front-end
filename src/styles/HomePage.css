@@ -69,15 +69,16 @@ hr.roundedDivider {
   padding-left: 2%;
   max-width: 45%;
 }
-#bottomHalfMedia {
+.bottomHalfMedia {
   padding-top: 3%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .mediaText {
+  width: 50%;
+  padding-right: 15%;
   padding-top: 20%;
-  padding-right: 10%;
   inline-size: 450px;
   overflow-wrap: break-word;
   text-align: center;

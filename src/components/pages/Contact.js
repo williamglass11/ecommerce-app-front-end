@@ -17,17 +17,17 @@ const Contact = () => {
         <form className="contactForm">
           <div className="namesContainer">
             <div id="fNameContainer">
-              <label htmlFor="fName">First Name</label>
+              <label htmlFor="fName" style={{fontWeight: 'bold'}}>First Name</label>
               <input type="text" id="fName" />
             </div>
             <div id="lNameContainer">
-              <label htmlFor="lName">Last Name</label>
+              <label htmlFor="lName" style={{fontWeight: 'bold'}}>Last Name</label>
               <input type="text" id="lName" />
             </div>
           </div>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email" style={{fontWeight: 'bold'}}>Email</label>
           <input type="text" id="email" />
-          <label htmlFor="contactMessage">{contactMessage}</label>
+          <label htmlFor="contactMessage" style={{fontWeight: 'bold'}}>{contactMessage}</label>
           <textarea id="contactMessage" rows="4" cols="50"></textarea>
           <input type="button" value="Submit" id="contactSubmit" />
         </form>
