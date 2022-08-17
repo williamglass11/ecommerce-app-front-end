@@ -55,8 +55,8 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    autoplay: false,
-    autoplaySpeed: 500,
+    autoplay: true,
+    autoplaySpeed: 6500,
     pauseOnHover: true,
     cssEase: "linear",
     responsive: [

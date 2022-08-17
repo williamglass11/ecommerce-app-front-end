@@ -1,8 +1,12 @@
 .about {
-  padding: 250px;
-  font-size: 100px;
-  color: aliceblue;
-  background: linear-gradient(rgb(28, 27, 27) 10%, #1888ff, #242424);
+  color: black;
+  background: aliceblue;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
+}
+#icon {
+  font-size: 300px;
+  border: 4px solid #242424;
+  border-radius: 120px;
 }
