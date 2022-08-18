@@ -81,7 +81,6 @@ const Carousel = () => {
       {
         breakpoint: 480,
         settings: {
-          speed: 4500,
           dots: false,
           slidesToShow: 1,
           slidesToScroll: 1,
