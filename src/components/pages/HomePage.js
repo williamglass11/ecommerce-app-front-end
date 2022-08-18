@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "../ProductCarousel/Carousel";
+import NewCarousel from "../ProductCarousel/NewCarousel";
 
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import AccessibilityIcon from "@mui/icons-material/Accessibility";
@@ -47,7 +48,7 @@ const HomePage = () => {
           </h1>
         </div>
         <hr className="roundedDivider"></hr>
-        <Carousel />
+        <NewCarousel />
         <div className="bottomHalfMedia">
           <img
             className="waterImage"

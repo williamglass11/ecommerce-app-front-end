@@ -52,8 +52,7 @@ const Footer = () => {
             <div className="link">Home</div>
             <div className="link">About</div>
             <div className="link">Consulting</div>
-            <div className="link">Design</div>
-            <div className="link">Development</div>
+            <div className="link">Careers</div>
             <div className="link">Products</div>
             <div className="link">Contact Form</div>
           </div>

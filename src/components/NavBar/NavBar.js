@@ -78,13 +78,13 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
-              to="/products"
+              to="/about"
               className="nav-links"
               onClick={() => {
-                closeMobileMenu("Products");
+                closeMobileMenu("About");
               }}
             >
-              Products
+              About
             </Link>
           </li>
           <li className="nav-item">

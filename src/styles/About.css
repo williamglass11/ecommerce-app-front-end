@@ -3,7 +3,12 @@
 }
 .about {
   color: black;
-  background: aliceblue;
+  background-image: linear-gradient(
+    180deg,
+    rgb(28, 27, 27) 0%,
+    #1888ff 30%,
+    aliceblue
+  );
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -146,6 +151,7 @@
     inline-size: 90%;
     z-index: 1;
     text-align: center;
+    font-weight: 300;
   }
   .secondContentSection {
     display: flex;
@@ -160,5 +166,6 @@
     z-index: 1;
     text-align: center;
     padding-bottom: 15%;
+    font-weight: 300;
   }
 }

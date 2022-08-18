@@ -4,9 +4,6 @@
 }
 
 .carouselContainer .carouselItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .carouselMedia {
   border-radius: 8px;
@@ -18,24 +15,26 @@
   margin-right: auto;
   width: 218px;
   height: 200px;
+  margin: 0;
+  margin-right: 0;
 }
 .carouselItem {
   display: flex;
   justify-content: center;
+  text-align: center;
+  border: #242424 solid 2px;
+  padding: 0;
 }
 .carouselItem :hover {
   cursor: pointer;
 }
 #carouselText {
+  width: 218px;
+  border: #242424 solid 2px;
   margin-top: 0;
   color: #242424;
   padding-top: 2px;
   text-align: center;
-  border-radius: 4px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top: transparent;
-  background-color: transparent;
 }
 .carouselHeader {
   text-align: center;
