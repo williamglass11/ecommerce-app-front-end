@@ -21,6 +21,9 @@
   margin-bottom: 0;
   box-shadow: 0 0 9px#242424;
 }
+.card :hover {
+  cursor: pointer;
+}
 
 .card-top h1 {
   font-size: 1rem;
@@ -41,7 +44,7 @@
   text-align: center;
   color: aliceblue;
   background-color: #1888ff;
-  border: transparent;
+  border: 1px solid #1888ff;
   border-radius: 4px;
   width: 150px;
   margin: auto;
