@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import HomePage from "./pages/HomePage";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Careers from "./pages/Careers";
 
 import book from "../styles/Images/BatteredBookImage.webp";
 import shoes from "../styles/Images/03-crocs-by-carrots-gq-september-2020.webp";
@@ -71,6 +72,7 @@ const ContentBuilder = () => {
           />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/careers" element={<Careers />} />
         </Routes>
         <Footer />
       </div>

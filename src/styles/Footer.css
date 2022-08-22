@@ -56,7 +56,7 @@ span {
   padding-bottom: 3px;
   margin-top: 5px;
   background-color: #1888ff;
-  border: transparent;
+  border: 1px solid #1888ff;
   border-radius: 4px;
 }
 #subscribe:hover {

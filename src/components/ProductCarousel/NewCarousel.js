@@ -67,7 +67,6 @@ const NewCarousel = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          dots: true,
           cssEase: "linear",
         },
       },

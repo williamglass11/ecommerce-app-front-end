@@ -1,0 +1,61 @@
+.topTitle {
+  background-color: aliceblue;
+  width: 100%;
+}
+.topTitle {
+  display: flex;
+  font-size: 25px;
+  padding: 5%;
+}
+
+.dropdownLocations ul {
+  background-color: aliceblue;
+  margin-top: 5px;
+  width: 160px;
+  height: 160px;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+  box-shadow: 5px 10px 18px #88888860;
+}
+.dropdownLocations li:hover {
+  background-color: #1888ff88;
+  cursor: pointer;
+}
+.dropdownLocations li {
+  color: black;
+  text-decoration: none;
+  padding-left: 9px;
+}
+.dropdownLocations i {
+  padding-left: 5px;
+}
+.topTitle button {
+  background: none;
+  border: none;
+  color: #1888ff;
+  font-size: 25px;
+  cursor: pointer;
+}
+.dropdownLocations button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(2px);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  z-index: 1;
+}
+.dropdownLocations button:hover {
+  color: #1888ff90;
+}
+@media screen and (max-width: 1000px) {
+  .dropdownLocations i {
+    display: inline-flex;
+  }
+}
