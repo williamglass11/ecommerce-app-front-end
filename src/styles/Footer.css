@@ -41,7 +41,7 @@ footer {
   color: #1888ffb3;
   margin-bottom: 8px;
 }
-span {
+.locationLine span {
   padding-left: 3px;
   margin-top: 4px;
 }

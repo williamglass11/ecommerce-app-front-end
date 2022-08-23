@@ -30,6 +30,9 @@ const careers = [
   },
 ];
 
+const uniqueLocations = [...new Set(careers.map(item => item.Location))]
+const uniquePositions = [...new Set(careers.map(item => item.Position))]
+
 const Careers = () => {
   const [location, setLocation] = useState("all locations");
 
@@ -55,18 +58,26 @@ const Careers = () => {
             >
               All locations
             </li>
-            {careers.map((item, key) => (
+            {uniqueLocations.map((item, key) => (
               <li
                 key={key}
                 onClick={() => {
-                  setLocationButton(item.Location);
+                  setLocationButton(item);
                 }}
               >
-                {item.Location}
+                {item}
               </li>
             ))}
           </ul>
         </div>
+      </div>
+      <span className='jobFilter'>
+          {uniquePositions.map((item, key) => (
+            <div key={key}>{item}</div>
+          ))}
+        </span>
+      <div className='bottomHalf'>
+        
       </div>
     </div>
   );

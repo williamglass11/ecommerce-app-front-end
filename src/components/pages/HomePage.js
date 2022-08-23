@@ -1,5 +1,4 @@
 import React from "react";
-import Carousel from "../ProductCarousel/Carousel";
 import NewCarousel from "../ProductCarousel/NewCarousel";
 
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
