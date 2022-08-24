@@ -28,10 +28,20 @@ const careers = [
     Location: "Austin",
     Title: "Senior Software Engineer",
   },
+  {
+    Position: "Software Developer",
+    Location: "Bangkok",
+    Title: "Senior Software Architect",
+  },
+  {
+    Position: "Intern",
+    Location: "Wyoming",
+    Title: "Rodeo Burger Specialist",
+  },
 ];
 
-const uniqueLocations = [...new Set(careers.map(item => item.Location))]
-const uniquePositions = [...new Set(careers.map(item => item.Position))]
+const uniqueLocations = [...new Set(careers.map((item) => item.Location))];
+const uniquePositions = [...new Set(careers.map((item) => item.Position))];
 
 const Careers = () => {
   const [location, setLocation] = useState("all locations");
@@ -71,13 +81,20 @@ const Careers = () => {
           </ul>
         </div>
       </div>
-      <span className='jobFilter'>
-          {uniquePositions.map((item, key) => (
-            <div key={key}>{item}</div>
+      <span className="jobFilter">
+        {uniquePositions.map((item, key) => (
+          <div key={key}>{item}</div>
+        ))}
+      </span>
+      <div className="bottomHalf">
+        <div className="jobCardContainer">
+          {careers.map((item, key) => (
+            <div className="jobCard" key={key}>
+              <div id="cardTitle">{item.Title}</div>
+              <div id="cardLocation">{item.Location}</div>
+            </div>
           ))}
-        </span>
-      <div className='bottomHalf'>
-        
+        </div>
       </div>
     </div>
   );
