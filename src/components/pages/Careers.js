@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+
 import "../../styles/Careers.css";
 
 const careers = [
@@ -38,6 +40,16 @@ const careers = [
     Location: "Wyoming",
     Title: "Rodeo Burger Specialist",
   },
+  {
+    Position: "Software Developer",
+    Location: "FlavorTown",
+    Title: "Junior Software Developer",
+  },
+  {
+    Position: "Intern",
+    Location: "New York",
+    Title: "Project Management Intern",
+  },
 ];
 
 const uniqueLocations = [...new Set(careers.map((item) => item.Location))];
@@ -45,21 +57,24 @@ const uniquePositions = [...new Set(careers.map((item) => item.Position))];
 
 const Careers = () => {
   const [location, setLocation] = useState("all locations");
+  const [position, setPosition] = useState("all positions");
 
   const setLocationButton = (location) => {
     setLocation(location);
+  };
+  const setPositionButton = (position) => {
+    setPosition(position);
   };
 
   return (
     <div className="careers">
       <div className="topTitle">
         Search for open positions in
-        <div className="dropdownLocations">
+        <div className="dropdownCareers">
           <button>
             {location}
             <i className="fas fa-caret-down" />
           </button>
-
           <ul>
             <li
               onClick={() => {
@@ -80,18 +95,42 @@ const Careers = () => {
             ))}
           </ul>
         </div>
+        <div className="dropdownCareers">
+          as
+          <button>
+            {position}
+            <i className="fas fa-caret-down" />
+          </button>
+          <ul>
+            <li
+              onClick={() => {
+                setPositionButton("all positions");
+              }}
+            >
+              All positions
+            </li>
+            {uniquePositions.map((item, key) => (
+              <li
+                key={key}
+                onClick={() => {
+                  setPositionButton(item);
+                }}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <span className="jobFilter">
-        {uniquePositions.map((item, key) => (
-          <div key={key}>{item}</div>
-        ))}
-      </span>
       <div className="bottomHalf">
         <div className="jobCardContainer">
           {careers.map((item, key) => (
             <div className="jobCard" key={key}>
               <div id="cardTitle">{item.Title}</div>
-              <div id="cardLocation">{item.Location}</div>
+              <div id="cardLocation">
+                {item.Location}
+                <LocationOnIcon />
+              </div>
             </div>
           ))}
         </div>

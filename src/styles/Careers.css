@@ -1,24 +1,25 @@
-.dropdownLocations ul {
+.dropdownCareers ul {
   position: relative;
   background-color: aliceblue;
   z-index: -1;
   margin-top: 5px;
   list-style: none;
   padding-left: 0;
-  transform: translateY(-10px);
+  transform: translateY(-20px);
   transition: all 0.4s ease;
   box-shadow: 5px 10px 18px #88888860;
 }
-.dropdownLocations li:hover {
+.dropdownCareers li:hover {
   background-color: #1888ff88;
   cursor: pointer;
 }
-.dropdownLocations li {
+.dropdownCareers li {
   color: black;
   text-decoration: none;
   padding-left: 9px;
+  padding-right: 9px;
 }
-.dropdownLocations i {
+.dropdownCareers i {
   padding-left: 5px;
 }
 .topTitle button {
@@ -28,7 +29,7 @@
   font-size: 25px;
   cursor: pointer;
 }
-.dropdownLocations button:focus + ul {
+.dropdownCareers button:focus + ul {
   opacity: 1;
   pointer-events: all;
   transform: translateY(2px);
@@ -37,7 +38,7 @@
   flex-direction: column;
   z-index: 1;
 }
-.dropdownLocations button:hover {
+.dropdownCareers button:hover {
   color: #1888ff90;
 }
 .topTitle {
@@ -47,33 +48,20 @@
   font-size: 25px;
   padding-top: 2%;
   justify-content: center;
+  border-bottom: 3px dotted #242424;
+  height: 260px;
 }
 .bottomHalf {
-  background-color: #1888ff;
+  background-color: rgb(24, 136, 255, 0.7);
   padding: 20px;
-}
-.jobFilter {
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 15px;
-  padding-bottom: 155px;
-  margin-top: -5%;
-}
-.jobFilter div {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.jobFilter div:hover {
-  cursor: pointer;
-  color: #1888ff;
 }
 .jobCardContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .jobCard {
   margin-top: 1%;
@@ -86,6 +74,8 @@
   color: aliceblue;
   border-radius: 10px;
   box-shadow: 0px 0px 9px #242424;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 .jobCard:hover {
   cursor: pointer;
@@ -94,15 +84,18 @@
   font-size: 20px;
   padding-top: 5%;
   padding-left: 5%;
+  text-decoration: underline;
 }
 #cardLocation {
+  display: flex;
   color: rgb(240, 248, 255, 0.5);
   padding-left: 5%;
   padding-bottom: 5px;
+  align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
-  .dropdownLocations i {
+  .dropdownCareers i {
     display: inline-flex;
   }
 }
@@ -114,8 +107,15 @@
     justify-content: center;
     text-align: center;
   }
-  .dropdownLocations ul {
+  .dropdownCareers ul {
     width: 200px;
     margin: auto;
+  }
+  .jobCardContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .jobCard {
+    margin-bottom: 2%;
   }
 }
