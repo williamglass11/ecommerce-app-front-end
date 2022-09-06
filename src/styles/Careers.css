@@ -2,6 +2,7 @@
   position: relative;
   background-color: aliceblue;
   z-index: -1;
+  opacity: 0;
   margin-top: 5px;
   list-style: none;
   padding-left: 0;
@@ -49,22 +50,22 @@
   padding-top: 2%;
   justify-content: center;
   border-bottom: 3px dotted #242424;
-  height: 260px;
+  height: 50px;
+
+  overflow-y: visible;
 }
 .bottomHalf {
   background-color: rgb(24, 136, 255, 0.7);
   padding: 20px;
+  min-height: 200px;
 }
 .jobCardContainer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 .jobCard {
-  margin-top: 1%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -74,8 +75,10 @@
   color: aliceblue;
   border-radius: 10px;
   box-shadow: 0px 0px 9px #242424;
-  margin-left: 1%;
+}
+.cardHolder {
   margin-right: 1%;
+  margin-bottom: 1%;
 }
 .jobCard:hover {
   cursor: pointer;
@@ -93,6 +96,10 @@
   padding-bottom: 5px;
   align-items: center;
 }
+#noResults {
+  background-color: #242424;
+  color: aliceblue;
+}
 
 @media screen and (max-width: 1000px) {
   .dropdownCareers i {
@@ -101,11 +108,11 @@
 }
 @media screen and (max-width: 475px) {
   .topTitle {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    display: block;
     justify-content: center;
     text-align: center;
+    height: max-content;
   }
   .dropdownCareers ul {
     width: 200px;

@@ -125,12 +125,17 @@ const Careers = () => {
       <div className="bottomHalf">
         <div className="jobCardContainer">
           {careers.map((item, key) => (
-            <div className="jobCard" key={key}>
-              <div id="cardTitle">{item.Title}</div>
-              <div id="cardLocation">
-                {item.Location}
-                <LocationOnIcon />
-              </div>
+            <div className="cardHolder" key={key}>
+              {(location === "all locations" || location === item.Location) &&
+              (position === "all positions" || position === item.Position) ? (
+                <div className="jobCard">
+                  <div id="cardTitle">{item.Title}</div>
+                  <div id="cardLocation">
+                    {item.Location}
+                    <LocationOnIcon />
+                  </div>
+                </div>
+              ) : null}
             </div>
           ))}
         </div>
