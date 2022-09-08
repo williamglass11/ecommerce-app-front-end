@@ -62,26 +62,25 @@
 .jobCardContainer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .jobCard {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 250px;
+  width: 280px;
   height: 100px;
   background-color: #242424;
   color: aliceblue;
   border-radius: 10px;
   box-shadow: 0px 0px 9px #242424;
-}
-.cardHolder {
-  margin-right: 1%;
-  margin-bottom: 1%;
+  padding: 1%;
+  margin: 1%;
 }
 .jobCard:hover {
   cursor: pointer;
+  background-color: #3f3f3f;
+  transition: all 0.4 ease-in-out;
 }
 #cardTitle {
   font-size: 20px;
@@ -124,5 +123,8 @@
   }
   .jobCard {
     margin-bottom: 2%;
+  }
+  .cardHolder {
+    margin: 0;
   }
 }
