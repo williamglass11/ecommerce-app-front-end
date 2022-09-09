@@ -78,9 +78,9 @@
   margin: 1%;
 }
 .jobCard:hover {
-  cursor: pointer;
   background-color: #3f3f3f;
-  transition: all 0.4 ease-in-out;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 #cardTitle {
   font-size: 20px;

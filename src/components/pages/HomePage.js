@@ -52,7 +52,7 @@ const HomePage = () => {
           <img
             className="waterImage"
             alt="stones in shallow water"
-            src={require("../../styles/Images/oceanwater.jpg")}
+            src={require("../../styles/Images/oceanwater-min.jpg")}
           />
           <h1 className="mediaText">{mediaText}</h1>
         </div>
