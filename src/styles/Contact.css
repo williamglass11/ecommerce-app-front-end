@@ -2,7 +2,7 @@
   background-color: rgb(227, 238, 255, 0.7);
   display: flex;
   flex-direction: row;
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 200px;
 }
 #contactLeftHalf {
@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  padding-top: 5%;
+  padding-top: 0;
   padding-bottom: 5%;
 }
 .namesContainer {
@@ -30,7 +30,7 @@
   border-radius: 8px;
   border: transparent;
   margin-top: 5px;
-  background-color: #c6e1ff;
+  background-color: #aad0fb;
 }
 #lName {
   width: 190px;
@@ -39,7 +39,7 @@
   border-radius: 8px;
   border: transparent;
   margin-top: 5px;
-  background-color: #c6e1ff;
+  background-color: #aad0fb;
 }
 #email {
   width: 290px;
@@ -49,7 +49,7 @@
   border-radius: 8px;
   border: transparent;
   margin-top: 5px;
-  background-color: #c6e1ff;
+  background-color: #aad0fb;
 }
 #contactMessage {
   width: 400px;
@@ -58,7 +58,7 @@
   border-radius: 8px;
   border: transparent;
   margin-top: 5px;
-  background-color: #c6e1ff;
+  background-color: #aad0fb;
 }
 #contactSubmit {
   width: 40%;
@@ -71,7 +71,7 @@
 }
 #contactSubmit:hover {
   transition: all 0.3s ease-out;
-  background-color: rgb(227, 238, 255, 0.7);
+  background-color: rgb(227, 238, 255, 0.3);
   color: #1888ff;
   cursor: pointer;
   opacity: 0.7;
@@ -80,11 +80,16 @@
 #fNameContainer {
   padding-right: 15%;
 }
+#lNameContainer {
+  padding-right: 15%;
+}
 .contactForm {
-  top: 50%;
-  width: 40%;
+  padding: 5%;
   display: flex;
   flex-direction: column;
+  background-color: rgb(240, 248, 255, 0.9);
+  box-shadow: 0 0 9px black;
+  border-radius: 4px;
 }
 #contactLeftHeadText {
   font-weight: bold;
@@ -103,6 +108,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 5%;
   }
   .contactForm {
     align-items: center;
@@ -134,5 +140,18 @@
   }
   #contactSubmit {
     width: 90px;
+  }
+  #fNameContainer {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  #lNameContainer {
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 2%;
   }
 }

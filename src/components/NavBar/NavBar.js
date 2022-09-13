@@ -98,22 +98,22 @@ function Navbar() {
           </li>
           <li>
             <Link
-              to="/signup"
+              to="/signIn"
               className="nav-links-mobile"
-              onClick={() => closeMobileMenu("SignUp")}
+              onClick={() => closeMobileMenu("SignIn")}
             >
-              Sign Up
+              Sign In
             </Link>
           </li>
         </ul>
         {isSignUp ? (
           <li className="nav-item">
             <Link
-              to="/signup"
+              to="/signIn"
               className={"btn"}
-              onClick={() => closeMobileMenu("SignUp")}
+              onClick={() => closeMobileMenu("SignIn")}
             >
-              Sign Up
+              Sign In
             </Link>
           </li>
         ) : (

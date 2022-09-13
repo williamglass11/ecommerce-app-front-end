@@ -1,0 +1,92 @@
+.signInPage {
+  background-color: rgba(193, 193, 193, 0.5);
+}
+
+#topLogInLogo {
+  max-height: 200px;
+  max-width: 200px;
+}
+.logInContainer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.userNameField {
+  background-color: rgb(240, 248, 255, 0.65);
+  border-radius: 20px;
+  display: inline-flex;
+  padding-right: 5px;
+}
+.userNameLog {
+  border: 0;
+  outline: none;
+  background: transparent;
+  height: 40px;
+  width: 200px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.passwordField {
+  margin-top: 10px;
+  background-color: rgb(240, 248, 255, 0.65);
+  border-radius: 20px;
+  display: inline-flex;
+  padding-right: 5px;
+}
+#submit {
+  margin-top: 10px;
+}
+#userNameIcon svg {
+  font-size: 20px;
+  text-align: right;
+  padding-left: 5px;
+  padding-top: 37%;
+}
+#passwordIcon svg {
+  font-size: 20px;
+  text-align: right;
+  padding-left: 5px;
+  padding-top: 37%;
+}
+
+.passwordLog {
+  border: 0;
+  outline: none;
+  background: transparent;
+  height: 40px;
+  width: 200px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+#submit {
+  margin-top: 20px;
+  background-color: #1888ff;
+  color: white;
+  border-radius: 20px;
+  height: 40px;
+  width: 241px;
+  border: 0;
+  font-size: 20px;
+}
+#switch {
+  display: inline-flex;
+  align-items: center;
+}
+#switchText {
+  color: white;
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: #156bc6;
+  transition: all 0.4s ease-in-out;
+}
+#userNameIcon {
+  font-size: 20px;
+}
