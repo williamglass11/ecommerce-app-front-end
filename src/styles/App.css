@@ -27,3 +27,6 @@ body {
   height: 40px;
   overflow: hidden;
 }
+.cardHolder path:hover {
+  color: red;
+}

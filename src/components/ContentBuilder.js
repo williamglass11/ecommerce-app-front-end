@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Careers from "./pages/Careers";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import Consulting from "./pages/Consulting";
 
 import book from "../styles/Images/BatteredBookImage.webp";
 import shoes from "../styles/Images/03-crocs-by-carrots-gq-september-2020.webp";
@@ -77,6 +78,7 @@ const ContentBuilder = () => {
           <Route path="/careers" element={<Careers />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/consulting" element={<Consulting />} />
         </Routes>
         <Footer />
       </div>

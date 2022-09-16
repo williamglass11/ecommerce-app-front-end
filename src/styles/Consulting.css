@@ -1,0 +1,118 @@
+.topSection {
+  padding-left: 8%;
+}
+.topSpan {
+  display: flex;
+  align-items: center;
+  background-color: rgba(24, 136, 255, 0.775);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#topConsultingLogo {
+  display: flex;
+  width: 300px;
+  margin: auto;
+}
+#topTextHeader {
+  inline-size: 450px;
+  color: aliceblue;
+  font-size: 45px;
+  padding-left: 7%;
+  font-weight: 900;
+  margin: 0;
+}
+#topTextBody {
+  inline-size: 600px;
+  color: aliceblue;
+  padding-left: 7%;
+  padding-top: 1%;
+  font-size: 13px;
+}
+#topLearnMore {
+  margin-left: 7%;
+  border: solid 2px aliceblue;
+  background-color: transparent;
+}
+#signUpConsulting {
+  margin-left: 3%;
+  border: solid 2px #242424;
+  background-color: #242424;
+}
+#topLearnMore:hover {
+  cursor: pointer;
+  background-color: #242424;
+  border-color: #242424;
+  transition: all 0.4s ease-in-out;
+}
+#signUpConsulting:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: #242424;
+  transition: all 0.4s ease-in-out;
+}
+.buttonSpanTop input {
+  margin-top: 4%;
+  height: 45px;
+  width: 140px;
+  color: aliceblue;
+  border-radius: 22px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  font-size: 15px;
+}
+.middleDividerConsulting {
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  background-color: #f0f8ff;
+  box-shadow: 1px 0px 10px black;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+}
+#consultingIcon {
+  font-size: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+#consultingIcon h3 {
+  font-size: 15px;
+  margin-top: 0;
+}
+#consultingIcon:hover {
+  cursor: pointer;
+  color: aliceblue;
+  transition: all 0.4s ease-in-out;
+  background: black;
+  border-radius: 8px;
+}
+.middleSection {
+  background-color: #242424;
+}
+.middleSection h1,
+h3 {
+  margin: 0;
+}
+#middleSectionHeader {
+  color: aliceblue;
+  text-align: center;
+  padding-top: 2%;
+  font-size: 30px;
+}
+#middleSectionTopText {
+  color: aliceblue;
+  font-size: 15px;
+  font-weight: 200;
+  padding-top: 1%;
+  text-align: center;
+}
+@media screen and (min-width: 2000px) {
+  #topTextHeader {
+    inline-size: 900px;
+  }
+  #topConsultingLogo {
+    width: 500px;
+  }
+}

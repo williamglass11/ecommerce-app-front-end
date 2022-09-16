@@ -20,7 +20,7 @@ const HomePage = () => {
   return (
     <div id="home">
       <div className="topSpaceWithLogo">
-        <div className="largeMessage">Simple, Fast, Ecommerce Solutions</div>
+        <div className="largeMessage">Simple, Fast, eCommerce Solutions</div>
         <img
           className="reactLogo"
           alt="React Logo"
