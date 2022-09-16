@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Careers from "./pages/Careers";
 import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 import book from "../styles/Images/BatteredBookImage.webp";
 import shoes from "../styles/Images/03-crocs-by-carrots-gq-september-2020.webp";
@@ -37,7 +38,7 @@ export const products = [
     id: 4,
     name: "controller",
     description:
-      "used to control input into a computing device, such as a game",
+      "used to control input into a computing device, such as a gameused to control input into a computing device, such as a game",
     image: controller,
   },
   {
@@ -75,6 +76,7 @@ const ContentBuilder = () => {
           <Route path="/about" element={<About />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/signIn" element={<SignIn />} />
+          <Route path="/signUp" element={<SignUp />} />
         </Routes>
         <Footer />
       </div>

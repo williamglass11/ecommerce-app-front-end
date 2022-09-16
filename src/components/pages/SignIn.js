@@ -1,5 +1,6 @@
 import React from "react";
 import AppleStyleSwitch from "../toggleSwitch/AppleStyleSwitch";
+import { Link } from "react-router-dom";
 
 import logo from "../../styles/Images/react-icon-dark.jpg";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -27,10 +28,13 @@ const SignIn = () => {
           </div>
           <input type="button" id="submit" value="Submit" />
         </form>
-        <div id="switch">
+        <div id="switchHolder">
           <AppleStyleSwitch />
           <div id="switchText">Remember Me</div>
         </div>
+        <Link id="createAccountBtn" to="/signUp">
+          Create Account
+        </Link>
       </section>
     </div>
   );

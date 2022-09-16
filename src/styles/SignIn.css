@@ -13,6 +13,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 8%;
+  padding-top: 5%;
 }
 .userNameField {
   background-color: rgb(240, 248, 255, 0.65);
@@ -20,17 +22,24 @@
   display: inline-flex;
   padding-right: 5px;
 }
+#createAccountBtn {
+  color: white;
+}
+#createAccountBtn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .userNameLog {
   border: 0;
   outline: none;
   background: transparent;
   height: 40px;
-  width: 200px;
+  width: 300px;
   padding-left: 10px;
   font-size: 20px;
 }
 .passwordField {
-  margin-top: 10px;
+  margin-top: 30px;
   background-color: rgb(240, 248, 255, 0.65);
   border-radius: 20px;
   display: inline-flex;
@@ -43,13 +52,15 @@
   font-size: 20px;
   text-align: right;
   padding-left: 5px;
-  padding-top: 37%;
+  padding-top: 40%;
+  opacity: 0.75;
 }
 #passwordIcon svg {
   font-size: 20px;
   text-align: right;
   padding-left: 5px;
-  padding-top: 37%;
+  padding-top: 40%;
+  opacity: 0.75;
 }
 
 .passwordLog {
@@ -57,7 +68,7 @@
   outline: none;
   background: transparent;
   height: 40px;
-  width: 200px;
+  width: 300px;
   padding-left: 10px;
   font-size: 20px;
 }
@@ -66,18 +77,22 @@
   flex-direction: column;
 }
 #submit {
-  margin-top: 20px;
+  margin-top: 30px;
   background-color: #1888ff;
   color: white;
   border-radius: 20px;
   height: 40px;
-  width: 241px;
+  width: 340px;
   border: 0;
   font-size: 20px;
 }
-#switch {
+#switchHolder {
+  margin-top: 10px;
   display: inline-flex;
   align-items: center;
+}
+#switchHolder label {
+  margin-right: 5px;
 }
 #switchText {
   color: white;
