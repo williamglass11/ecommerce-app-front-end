@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 
 import book from "../../styles/Images/BatteredBookImage.webp";
 import shoes from "../../styles/Images/03-crocs-by-carrots-gq-september-2020.webp";
@@ -92,7 +93,7 @@ const NewCarousel = () => {
   };
   return (
     <div className="carouselContainer">
-      <h2 className="carouselHeader">Shop now</h2>
+      <Link to='/products' className="carouselHeader">Shop now</Link>
       <Slider {...settings}>
         {images.map((item) => (
           <div className="card">

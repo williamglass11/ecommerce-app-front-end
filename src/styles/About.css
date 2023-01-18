@@ -116,6 +116,7 @@
 #secondContentText {
   font-size: 30px;
   inline-size: 40%;
+  text-align: right;
 }
 #iconThree {
   font-size: 80px;

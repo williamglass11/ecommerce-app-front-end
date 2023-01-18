@@ -57,6 +57,7 @@
 .bottomHalf {
   background-color: rgb(24, 136, 255, 0.7);
   padding: 20px;
+  padding-bottom: 680px;
   min-height: 200px;
 }
 .jobCardContainer {

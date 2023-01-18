@@ -46,8 +46,9 @@
 }
 #signUpConsulting:hover {
   cursor: pointer;
-  background-color: transparent;
-  border-color: #242424;
+  background-color: aliceblue;
+  border-color: transparent;
+  color: #242424;
   transition: all 0.4s ease-in-out;
 }
 .buttonSpanTop input {

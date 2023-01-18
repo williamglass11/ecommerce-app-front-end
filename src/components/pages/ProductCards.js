@@ -13,6 +13,9 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 
 import "../../styles/App.css";
 
+
+//TO-DO: Add pagination and possibly re-design card layout to prevent uneven/non-symmetrical card layouts
+
 const useStyles = makeStyles({
   root: {
     width: 290,

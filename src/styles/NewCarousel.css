@@ -43,12 +43,14 @@
   object-fit: cover;
 }
 .carouselHeader {
+  display: flex;
   text-align: center;
+  text-decoration: none;
   color: aliceblue;
   background-color: #1888ff;
   border: 1px solid #1888ff;
   border-radius: 4px;
-  width: 150px;
+  width: 75px;
   margin: auto;
   margin-bottom: 3%;
   box-shadow: 0 0 9px#242424;

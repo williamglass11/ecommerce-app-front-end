@@ -13,8 +13,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 8%;
-  padding-top: 5%;
+  padding-bottom: 12%;
+  padding-top: 10%;
 }
 .userNameField {
   background-color: rgb(240, 248, 255, 0.65);

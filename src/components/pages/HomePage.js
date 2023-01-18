@@ -14,7 +14,7 @@ const equalOp =
 const payment =
   "We accept all major payment apps like Venmo, Paypal, Zelle, and cashapp. In addition we also accept wallet to wallet crypto transfers.";
 const mediaText =
-  "Tired of big Jeff harvesting your data?? Here we are just concerned with delivering customers high quality products on time. We are dedicated to meeting this mission because this company was founded on the idea that Jeff is way too rich and Amazon needs a serious competitor in this market Tired of big Jeff harvesting your data?? Here we are just concerned with delivering customers high quality products on time. We are dedicated to meeting this mission because this company was founded on the idea that Jeff is way too rich and Amazon needs a serious competitor in this market";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. The rest of this is just filler text for the pure reason of filling space to help with layout and design, I hope you like this website I am currently working on, feel free to contact me with any recommendations or advice";
 
 const HomePage = () => {
   return (
